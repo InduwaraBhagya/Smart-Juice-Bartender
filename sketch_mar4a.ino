@@ -29,8 +29,9 @@ Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 void setup() {
   lcd.begin();
   lcd.backlight();
-  lcd.setCursor(0, 0);
-  lcd.print("Smart Juice Bar");
+  lcd.print("Welcome Slushies");
+  lcd.setCursor(0, 1);
+  lcd.print("Juice Maker");
   delay(2000);
   lcd.clear();
   lcd.print("Select Drink:");
