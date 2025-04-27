@@ -75,10 +75,16 @@ void dispense(int juice1_time, int juice2_time, int sugar_time, int water_time) 
   }
 
   lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Press the Switch");
+  lcd.setCursor(0,1);
+  lcd.print("to mix ");
+  delay(5000);
+  lcd.clear();
   lcd.print("Drink Ready!");
   delay(2000);
   lcd.clear();
-  lcd.print("Select Drink:");
+  lcd.print("Select Drink:"); 
 }
 
 void loop() {
